@@ -1,19 +1,33 @@
 plugins {
-    id 'java'
+    // apply the application plugin (which by default includes java)
+    id 'application'
+    //id 'java'
 }
 
+// application information
 group 'com.scmtf.testorekit'
 version '1.0-SNAPSHOT'
 
 repositories {
+    // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
 
+// mandatory step, declaring main class (entry point)
+application {
+    mainClass = 'om.scmtf.testorekit.Main'
+}
+
 dependencies {
+    // used for test
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+
+    // used by the main application
+    implementation 'org.orekit:orekit:11.2.1'
 }
 
 test {
+    //Use JUnit platform for tests
     useJUnitPlatform()
 }
