@@ -15,7 +15,7 @@ repositories {
 
 // mandatory step, declaring main class (entry point)
 application {
-    mainClass = 'om.scmtf.testorekit.Main'
+    mainClass = 'com.scmtf.testorekit.Main'
 }
 
 dependencies {
