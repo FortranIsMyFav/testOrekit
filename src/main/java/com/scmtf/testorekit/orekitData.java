@@ -13,7 +13,8 @@ import java.io.IOException;
  * @author scmtf scm.tensorflow@gmail.com
  */
 public final class orekitData {
-    public static final String OREKIT_RESOURCE_PATH = "orekit-data.zip";
+    //public static final String OREKIT_RESOURCE_PATH = "orekit-data.zip";
+    public static final String OREKIT_RESOURCE_PATH = "orekit-data";
     public static final String OREKIT_DATA_ENVIRONMENT_VARIABLE_NAME = "LOCAL_OREKIT_DATA_PATH";
     public static final String OREKIT_DATA_RUNTIME_PROPERTY_NAME = "JVM_VAR_OREKIT_DATA_PATH";
 
